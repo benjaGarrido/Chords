@@ -1,26 +1,111 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gGR-Uv-fp7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Piano-->
+        <scene sceneID="YDg-rq-f1h">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="937-wV-SyK" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="5Pc-kE-u3A"/>
+                        <viewControllerLayoutGuide type="bottom" id="JgC-Aj-SFG"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="cx1-HF-q4E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Piano" id="GqK-6P-boc"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BxS-oo-O0z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1040.8" y="366.56671664167919"/>
+        </scene>
+        <!--Guitarra-->
+        <scene sceneID="UG2-28-gbC">
+            <objects>
+                <viewController id="ryX-vU-Si8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wP6-Gt-Qmz"/>
+                        <viewControllerLayoutGuide type="bottom" id="hZL-Bf-LrI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A7b-xU-bPc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Guitarra" id="M9w-oR-Sif"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9eg-Yw-TjI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039.2" y="-289.20539730134936"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ahy-rP-mA4">
+            <objects>
+                <tabBarController id="gGR-Uv-fp7" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="uYc-7s-1lw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="7sM-Lh-bIc" kind="relationship" relationship="viewControllers" id="321-Xh-olP"/>
+                        <segue destination="WKw-Gy-wRk" kind="relationship" relationship="viewControllers" id="GOP-bx-jlP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J9a-7D-n8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-855" y="38"/>
+        </scene>
+        <!--Guitarra-->
+        <scene sceneID="0X7-j2-dKq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7sM-Lh-bIc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Guitarra" image="img_tabbar_guitar_off" id="vcn-fz-uwO"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c39-BD-vpd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ryX-vU-Si8" kind="relationship" relationship="rootViewController" id="plD-4d-hgf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qlq-6Z-Ac8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="-289.20539730134936"/>
+        </scene>
+        <!--Piano-->
+        <scene sceneID="Hyh-dU-DQP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WKw-Gy-wRk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Piano" image="img_tabbar_piano_off" id="kh8-4X-Lis"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dLk-qB-Lwd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="937-wV-SyK" kind="relationship" relationship="rootViewController" id="bl1-CC-6ab"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P3i-Al-UUS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.59999999999999" y="366.56671664167919"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="img_tabbar_guitar_off" width="19" height="25"/>
+        <image name="img_tabbar_piano_off" width="21" height="21"/>
+    </resources>
 </document>
