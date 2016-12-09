@@ -13,6 +13,7 @@
 		C135A3581DF9F8B80079A0ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C135A3571DF9F8B80079A0ED /* Assets.xcassets */; };
 		C135A35B1DF9F8B80079A0ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C135A3591DF9F8B80079A0ED /* LaunchScreen.storyboard */; };
 		C1BAED3D1DFB4E890065692A /* GuitarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BAED3C1DFB4E890065692A /* GuitarViewController.swift */; };
+		C1BAED3F1DFB529D0065692A /* PianoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BAED3E1DFB529D0065692A /* PianoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C135A35A1DF9F8B80079A0ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C135A35C1DF9F8B80079A0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1BAED3C1DFB4E890065692A /* GuitarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuitarViewController.swift; sourceTree = "<group>"; };
+		C1BAED3E1DFB529D0065692A /* PianoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				C135A3591DF9F8B80079A0ED /* LaunchScreen.storyboard */,
 				C135A35C1DF9F8B80079A0ED /* Info.plist */,
 				C1BAED3C1DFB4E890065692A /* GuitarViewController.swift */,
+				C1BAED3E1DFB529D0065692A /* PianoViewController.swift */,
 			);
 			path = Chords;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			files = (
 				C135A3531DF9F8B80079A0ED /* ViewController.swift in Sources */,
 				C1BAED3D1DFB4E890065692A /* GuitarViewController.swift in Sources */,
+				C1BAED3F1DFB529D0065692A /* PianoViewController.swift in Sources */,
 				C135A3511DF9F8B80079A0ED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
